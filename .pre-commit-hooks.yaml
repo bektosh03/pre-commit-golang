@@ -1,0 +1,9 @@
+- id: my-revive
+  name: 'my-revive'
+  entry: my-revive.sh
+  files: '(\.go$)|(\bgo\.mod$)|(\brevive\.toml$)'
+  language: 'script'
+  types: [go]
+  exclude: '(^|/)vendor/'
+  description: "Run 'revive [$ARGS] $FILE' for each staged .go file"
+  pass_filenames: true
